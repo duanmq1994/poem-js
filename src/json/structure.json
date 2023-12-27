@@ -1,0 +1,16 @@
+[
+    ["noun", "conj", "noun"],
+    ["adv", "verb", "noun"],
+    ["verb", "noun", "adj", "noun"],
+    ["noun", "adv", "adj"],
+    ["noun", "adv"],
+    ["adj", "noun"],
+    ["noun", "prep", "，", "noun", "verb"],
+    ["noun", "adv", "verb"],
+    ["verb", "excl"],
+    ["noun", "verb", "status", "noun"],
+    ["noun", "verb", "status"],
+    ["noun", "verb", "status", "adj", "noun"],
+    ["noun", "verb", "status", "adj", "num", "quali", "noun"],
+    ["verb", "status", "adj", "noun"]
+]
