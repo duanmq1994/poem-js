@@ -8,6 +8,7 @@ import prep from '../json/prep.json'
 import quali from '../json/quali.json'
 import status from '../json/status.json'
 import verb from '../json/verb.json'
+import verbi from '../json/verbi.json'
 
 export default {
     "adj": adj,
@@ -20,4 +21,5 @@ export default {
     "quali": quali,
     "status": status,
     "verb": verb,
+    "verbi": verbi
 }
