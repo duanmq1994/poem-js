@@ -1,7 +1,6 @@
 import adj from '../json/adj.json'
 import adv from '../json/adv.json'
 import conj from '../json/conj.json'
-import excl from '../json/excl.json'
 import noun from '../json/noun.json'
 import num from '../json/num.json'
 import prep from '../json/prep.json'
@@ -14,7 +13,6 @@ export default {
     "adj": adj,
     "adv": adv,
     "conj": conj,
-    "excl": excl,
     "noun": noun,
     "num": num,
     "prep": prep,

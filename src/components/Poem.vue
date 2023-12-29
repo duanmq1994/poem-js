@@ -8,12 +8,19 @@ defineProps({
 });
 
 onMounted(() => {
-  poem.value = generate(3)
+  poem.value = generate(5, false)
 })
 </script>
 
 <template>
+  <div class="container">
+
+  </div>
   <p v-for="line in poem">{{ line }}</p>
 </template>
 
-<style scoped></style>
+<style scoped>
+.container {
+  padding: 5rem;
+}
+</style>
