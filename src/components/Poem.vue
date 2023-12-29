@@ -2,24 +2,28 @@
 import { onMounted, ref } from 'vue';
 import generate from '../js/generator';
 
-const poem = ref('')
+const poem = ref([])
 defineProps({
   msg: String,
 });
 
 onMounted(() => {
-  poem.value = generate(5, false)
+  poem.value = ['期待你的诗作']
 })
+
+const handleGenerate = () => {
+  poem.value = generate(5, false)
+}
 </script>
 
 <template>
   <div class="container">
     <div class="control-container">
       <input class="slider" type="range">
-      <button class="main-button">生成</button>
+      <button class="main-button" @click="handleGenerate">生成</button>
     </div>
     <div class="poem-container">
-      <p v-for="line in poem">{{ line }}</p>
+      <p class="poem-text" v-for="line in poem">{{ line }}</p>
     </div>
   </div>
 </template>
@@ -58,5 +62,10 @@ onMounted(() => {
   max-width: 500px;
   height: max-content;
   min-height: 80px;
+  text-align: center;
+}
+.poem-text {
+  font-size: 15px;
+  color: #272727;
 }
 </style>
