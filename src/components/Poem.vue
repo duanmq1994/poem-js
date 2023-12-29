@@ -3,6 +3,8 @@ import { onMounted, ref } from 'vue';
 import generate from '../js/generator';
 
 const poem = ref([])
+const count = ref(5)
+
 defineProps({
   msg: String,
 });
@@ -12,14 +14,14 @@ onMounted(() => {
 })
 
 const handleGenerate = () => {
-  poem.value = generate(5, false)
+  poem.value = generate(count, false)
 }
 </script>
 
 <template>
   <div class="container">
     <div class="control-container">
-      <input class="slider" type="range">
+      <input class="slider" type="range" v-bind="count">
       <button class="main-button" @click="handleGenerate">生成</button>
     </div>
     <div class="poem-container">
