@@ -68,6 +68,7 @@ const handleGenerate = () => {
   border-radius: 20px;
   width: 45%;
   height: 40px;
+  font-size: 16px;
 }
 .poem-container {
   padding: 15px 25px;
